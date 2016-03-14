@@ -36,19 +36,24 @@ nav a:hover {
   background-color: rgba(226, 136, 18, 0.9); }
 
 .wrapper {
-  background-color: rgba(255, 255, 255, 0.6); }
-
-.parallax-window {
-  height: 100vh;
-  min-height: 400px;
   width: 100%;
-  background: transparent; }
-  .parallax-window h1 {
+  min-height: 100vh;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6); }
+  .wrapper h1 {
     font-size: 200px;
     margin: 0;
     padding-top: 270px;
     text-align: center;
     color: #919191; }
+
+.parallax-window {
+  height: 100vh;
+  min-height: 400px;
+  width: 100%;
+  background-image: url("../Images/NewYork.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .content {
   width: 100%;

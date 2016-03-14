@@ -26,7 +26,7 @@
 
 $(document).ready(
 	function(){
-		$('.parallax-window').parallax({imageSrc: 'Images/NewYork.jpg'});
+		
 
 
 		$(window).scroll(function(){
@@ -41,12 +41,6 @@ $(document).ready(
 				});
 			}
 
-			if ( $(window).scrollTop() > 900 ) {
-				$('.one').fadeTo(400,1);
-				$('.two').delay(500).fadeTo(400,1);
-				$('.three').delay(1000).fadeTo(400,1);
-				$('.four').delay(1500).fadeTo(400,1);
-			}	
 		});
 });		
 

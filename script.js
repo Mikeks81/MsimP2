@@ -1,18 +1,18 @@
-function home(){
-	$('html, body').animate({scrollTop: 0},700);
-}
+// function home(){
+// 	$('html, body').animate({scrollTop: 0},700);
+// }
 
-function about(){
-	$('html, body').animate({scrollTop: 483},700);
-}
+// function about(){
+// 	$('html, body').animate({scrollTop: 483},700);
+// }
 
-function portfolio(){
-	$('html, body').animate({scrollTop: 1324},700);
-}
+// function portfolio(){
+// 	$('html, body').animate({scrollTop: 1324},700);
+// }
 
-function contact(){
-	$('html, body').animate({scrollTop: 2439},700);
-}
+// function contact(){
+// 	$('html, body').animate({scrollTop: 2439},700);
+// }
 
 // function typing(){
 // 	var greeting = "Michael Simonitsch".split("");

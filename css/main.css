@@ -52,11 +52,17 @@ nav a:hover {
 
 .content {
   width: 100%;
-  max-height: 100vh; }
+  margin-bottom: 10%; }
   .content .content_container {
     width: 90%;
-    margin: 15% auto;
-    overflow: auto; }
+    margin: 0 auto;
+    overflow: auto;
+    height: 100vh; }
+    .content .content_container h1 {
+      margin-bottom: 5%;
+      font-size: 8em;
+      text-align: center;
+      color: #e28812; }
   .content .c1, .content .c2, .content .c3 {
     margin: 0;
     padding: 0;
@@ -69,7 +75,7 @@ nav a:hover {
       max-width: 200px;
       float: left; }
 
-.secondP, .thirdP {
+.secondP {
   height: 50vh;
   min-height: 400px;
   width: 100%;
@@ -81,50 +87,36 @@ nav a:hover {
   width: 100%; }
   .content_gallery .grey_background {
     padding: 1% 0;
-    background-color: #e8e8e8; }
+    background-color: #494949;
+    color: white; }
     .content_gallery .grey_background h1 {
+      font-size: 8em;
       text-align: center;
       color: #e28812; }
   .content_gallery .white_background {
     padding: 5% 0; }
   .content_gallery .img_one_container, .content_gallery .img_two_container, .content_gallery .img_three_container, .content_gallery .img_four_container {
-    width: 50%;
+    width: 80%;
     margin: 3% auto;
-    overflow: hidden;
-    opacity: 0; }
+    overflow: hidden; }
     .content_gallery .img_one_container a, .content_gallery .img_two_container a, .content_gallery .img_three_container a, .content_gallery .img_four_container a {
       color: #e28812;
       font-family: 'PT Sans', sans-serif; }
-  .content_gallery .img_info_one, .content_gallery .img_info_two, .content_gallery .img_info_three, .content_gallery .img_info_four {
-    position: absolute;
-    color: white;
-    width: 48.4%;
-    max-width: 50%;
-    padding: 10px;
-    background-color: #e28812;
-    font-family: 'PT Sans', sans-serif;
-    opacity: 0;
-    transition: opacity 1s; }
-  .content_gallery .img_one_container:hover .img_info_one, .content_gallery .img_two_container:hover .img_info_one, .content_gallery .img_three_container:hover .img_info_one, .content_gallery .img_four_container:hover .img_info_one, .content_gallery .img_one_container:hover .img_info_two, .content_gallery .img_two_container:hover .img_info_two, .content_gallery .img_three_container:hover .img_info_two, .content_gallery .img_four_container:hover .img_info_two, .content_gallery .img_one_container:hover .img_info_three, .content_gallery .img_two_container:hover .img_info_three, .content_gallery .img_three_container:hover .img_info_three, .content_gallery .img_four_container:hover .img_info_three, .content_gallery .img_one_container:hover .img_info_four, .content_gallery .img_two_container:hover .img_info_four, .content_gallery .img_three_container:hover .img_info_four, .content_gallery .img_four_container:hover .img_info_four {
-    opacity: 1;
-    transition: opacity 1s; }
-  .content_gallery .hide_show {
-    position: absolute; }
-  .content_gallery .image {
-    background-position: center;
-    background-size: 100%;
-    width: 100%;
-    height: 100%; }
-  .content_gallery img:hover {
-    transition: transform 0.1s ease-in; }
-
-.thirdP {
-  height: 30vh; }
+    .content_gallery .img_one_container img, .content_gallery .img_two_container img, .content_gallery .img_three_container img, .content_gallery .img_four_container img {
+      float: left;
+      width: 55%; }
+    .content_gallery .img_one_container .img_info_one, .content_gallery .img_two_container .img_info_one, .content_gallery .img_three_container .img_info_one, .content_gallery .img_four_container .img_info_one, .content_gallery .img_one_container .img_info_two, .content_gallery .img_two_container .img_info_two, .content_gallery .img_three_container .img_info_two, .content_gallery .img_four_container .img_info_two, .content_gallery .img_one_container .img_info_three, .content_gallery .img_two_container .img_info_three, .content_gallery .img_three_container .img_info_three, .content_gallery .img_four_container .img_info_three, .content_gallery .img_one_container .img_info_four, .content_gallery .img_two_container .img_info_four, .content_gallery .img_three_container .img_info_four, .content_gallery .img_four_container .img_info_four {
+      float: left;
+      width: 40%;
+      max-width: 50%;
+      padding: 10px;
+      font-family: 'PT Sans', sans-serif; }
 
 .contact_me {
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  height: 100vh; }
   .contact_me h1 {
     color: #919191; }
   .contact_me .contact_box {

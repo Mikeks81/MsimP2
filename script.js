@@ -27,13 +27,13 @@
 $(document).ready(
 	function(){
 		
-
+		$('#greeting').delay(3000).slideUp(300);
 
 		$(window).scroll(function(){
-			$('.greeting').css({'opacity': 1-(($(this).scrollTop())/250)
-			});
-			$('.wrapper').css({'opacity': 1-(($(this).scrollTop())/250)
-			});
+			// $('.greeting').css({'opacity': 1-(($(this).scrollTop())/200)
+			// });
+			// $('.wrapper').css({'opacity': 1-(($(this).scrollTop())/200)
+			// });
 
 			if ( $('header').css('opacity') < 1){
 				$('header').css({'opacity':0+(
@@ -42,6 +42,7 @@ $(document).ready(
 			}
 
 		});
+
 });		
 
 

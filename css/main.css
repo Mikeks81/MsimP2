@@ -10,7 +10,8 @@ header {
   background: white;
   opacity: 0;
   z-index: 999999;
-  box-shadow: 0 0 1px #d6d6d6; }
+  box-shadow: 0 0 1px #d6d6d6;
+  top: 0; }
   header h1 {
     width: 35%;
     margin: 5px 380px 0 0;
@@ -56,35 +57,51 @@ nav a:hover {
   background-size: cover; }
 
 .content {
-  width: 100%;
-  margin-bottom: 10%; }
+  width: 100%; }
   .content .content_container {
     width: 90%;
     margin: 0 auto;
-    overflow: auto;
-    height: 100vh; }
+    height: 90vh; }
     .content .content_container h1 {
       margin-bottom: 5%;
       font-size: 8em;
       text-align: center;
       color: #e28812; }
-  .content .c1, .content .c2, .content .c3 {
+  .content .c1 {
+    width: 20%;
+    float: left;
+    margin: 0 0px 0 5px; }
+    .content .c1 .headshot {
+      max-width: 200px;
+      float: left; }
+  .content .c2, .content .c3 {
     margin: 0;
     padding: 0;
-    width: 30%;
-    margin: 20px 0 0 30px;
+    width: 36%;
+    margin: 0px 0 0 30px;
     float: left;
     color: #919191;
     font-family: Arial; }
-    .content .c1 .headshot, .content .c2 .headshot, .content .c3 .headshot {
-      max-width: 200px;
-      float: left; }
+    .content .c2 h2, .content .c3 h2 {
+      margin-top: 0px; }
 
-.secondP {
-  height: 50vh;
-  min-height: 400px;
-  width: 100%;
-  background: transparent; }
+#code_info {
+  display: flex;
+  justify-content: space-around;
+  clear: both;
+  color: #888;
+  font-family: Arial;
+  margin-bottom: 45px; }
+  #code_info div {
+    box-shadow: 0 0 7px #ccc;
+    width: 30%;
+    background-color: #f7f7f7; }
+  #code_info h4 {
+    text-align: center;
+    color: #e28812; }
+  #code_info p {
+    margin: 6px;
+    text-align: center; }
 
 .content_gallery {
   margin: 0;
@@ -93,7 +110,7 @@ nav a:hover {
   .content_gallery .grey_background {
     padding: 1% 0;
     background-color: #494949;
-    color: white; }
+    color: #ccc; }
     .content_gallery .grey_background h1 {
       font-size: 8em;
       text-align: center;

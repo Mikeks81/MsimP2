@@ -6,7 +6,7 @@
 	.grey_background {
 		padding: 1% 0;
 		background-color: #494949;
-		color: white;
+		color: #ccc;
 		h1 {
 			font-size: 8em;
 			text-align: center;
@@ -28,6 +28,7 @@
 		img {
 			float: left;
 			width: 55%;
+			// box-shadow: 0 0 20px #ccc;
 		}
 		
 		.img_info_one {

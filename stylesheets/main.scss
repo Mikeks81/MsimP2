@@ -27,14 +27,13 @@ body{
 }
 
 header {
-	// border-bottom: solid 1px black;
-	// overflow: auto;
 	position: fixed;
     width: 100%;
     background: white;
     opacity: 0;
     z-index: 999999;
     box-shadow: 0 0 1px #d6d6d6;
+    top:0;
 	h1 {
 	width: 35%;
 	margin: 5px 380px 0 0;
@@ -51,7 +50,7 @@ header {
 	min-height: 100vh;
 	position: absolute;
 	background-color: rgba(255,255,255, .6);
-	// z-index: 999999;
+
 	h1 {
     	font-size: 200px;
     	margin:0;
@@ -71,15 +70,12 @@ header {
 
 .content {
 	width: 100%;
-	margin-bottom: 10%;
-	// height: 100vh;
+	// margin-bottom: 5%;
 
 	.content_container {
 		width: 90%;
 		margin: 0 auto;
-
-		overflow: auto;
-		height: 100vh;
+		height: 90vh;
 		h1 {
 			margin-bottom: 5%;
 			font-size: 8em;
@@ -88,24 +84,48 @@ header {
 		}
 	}
 
-	.c1, .c2, .c3 {
-		@include margin_padding(0);
-		width: 30%;
-		margin: 20px 0 0 30px;
-		float:left;
-		color: $grey_color;
-		font-family: Arial;
+	.c1 {
+		width: 20%;
+		float: left;
+		margin:0 0px 0 5px;
 		.headshot {
 			max-width: 200px;
 			float:left;
 		}
 	}
+	.c2, .c3 {
+		@include margin_padding(0);
+		width: 36%;
+		margin: 0px 0 0 30px;
+		float:left;
+		color: $grey_color;
+		font-family: Arial;
+		h2 {
+			margin-top: 0px;
+		}
+	}
 }
-.secondP {
-	height: 50vh;
-    min-height: 400px;
-    width: 100%;
-    background: transparent;
+
+#code_info {
+	display: flex;
+	justify-content:space-around;
+	clear: both;
+	color: #888;
+	font-family: Arial;
+	margin-bottom: 45px;
+	div {
+		box-shadow: 0 0 7px #ccc;
+		width: 30%;
+		background-color: #f7f7f7;
+	}
+	h4{
+		text-align: center;
+		color: $orange;
+	}
+	p {
+		margin: 6px;
+		text-align: center;
+	}
 }
 
 // ############ Gallery ############

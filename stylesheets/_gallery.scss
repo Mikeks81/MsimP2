@@ -4,8 +4,12 @@
 		// display: inline-block;
 	width: 100%;
 	.grey_background {
-		padding: 5% 0;
+		padding: 1% 0;
 		background-color: #e8e8e8;
+		h1 {
+			text-align: center;
+			color: $orange;
+		}
 	}
 	.white_background {
 		padding: 5% 0;
@@ -15,6 +19,12 @@
 		margin: 3% auto;
 		overflow: hidden;
 		opacity: 0;
+
+		a {
+			color: $orange;
+			font-family: 'PT Sans', sans-serif;
+		}
+		
 	}
 
 	
@@ -24,7 +34,7 @@
     	width: 48.4%;
     	max-width: 50%;
     	padding: 10px;
-    	background-color: rgba(255, 144, 0, 0.8);
+    	background-color: $orange;
     	font-family: 'PT Sans', sans-serif;
     	opacity: 0;
     	transition: opacity 1s;

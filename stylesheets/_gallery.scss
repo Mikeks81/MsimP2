@@ -18,8 +18,13 @@
 	}
 	.img_one_container {
 		width: 80%;
-		margin: 3% auto;
+		margin: 2% auto;
+		padding: 5%;
 		overflow: hidden;
+		background-color: #4f4f4f;
+		// border: 1px solid #707070;
+		border-radius: 5px;
+		box-shadow: 0 0 10px #3a3a3a;
 
 		a {
 			color: $orange;
@@ -54,6 +59,7 @@
 	}
 	.img_four_container {
 		@extend .img_one_container;
+		margin-bottom: 80px;
 	}
 	.img_info_four {
 		@extend .img_info_one;

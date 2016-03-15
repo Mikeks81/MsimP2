@@ -52,14 +52,6 @@ nav {
     text-align: center;
     color: #919191; }
 
-.parallax-window {
-  height: 100vh;
-  min-height: 400px;
-  width: 100%;
-  background-image: url("../Images/NewYork.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 #about {
   margin-top: 30%; }
 
@@ -136,8 +128,12 @@ nav {
     padding: 5% 0; }
   .content_gallery .img_one_container, .content_gallery .img_two_container, .content_gallery .img_three_container, .content_gallery .img_four_container {
     width: 80%;
-    margin: 3% auto;
-    overflow: hidden; }
+    margin: 2% auto;
+    padding: 5%;
+    overflow: hidden;
+    background-color: #4f4f4f;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3a3a3a; }
     .content_gallery .img_one_container a, .content_gallery .img_two_container a, .content_gallery .img_three_container a, .content_gallery .img_four_container a {
       color: #e28812;
       font-family: 'PT Sans', sans-serif; }
@@ -150,6 +146,8 @@ nav {
       max-width: 50%;
       padding: 10px;
       font-family: 'PT Sans', sans-serif; }
+  .content_gallery .img_four_container {
+    margin-bottom: 80px; }
 
 .contact_me {
   margin: 0;

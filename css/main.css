@@ -40,6 +40,13 @@ nav {
     transition: 0.1s ease-in;
     background-color: rgba(226, 136, 18, 0.9); }
 
+@media all and (max-width: 1040px) {
+  nav {
+    width: 50%; } }
+@media all and (max-width: 830px) {
+  nav {
+    width: 100%;
+    float: none; } }
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -173,5 +180,17 @@ nav {
       font-size: 2em; }
     .contact_me .contact_box span {
       color: #e28812; }
+
+@media all and (max-width: 990px) {
+  .headshot {
+    display: none; }
+
+  .content_container .c2, .content_container .c3 {
+    width: 93%;
+    float: none; } }
+@media all and (max-width: 740px) {
+  header h1 {
+    width: 300px;
+    font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: transparent;
-  font-family: Impact, sans-serif; }
+  font-family: 'Fjalla One', sans-serif; }
 
 header {
   position: fixed;
@@ -75,8 +75,8 @@ nav {
     margin: 0 auto;
     height: 90vh; }
     .content .content_container h1 {
-      margin-bottom: 5%;
-      margin-top: 0;
+      margin-bottom: 0;
+      margin-top: 8%;
       font-size: 8em;
       text-align: center;
       color: #e28812; }
@@ -158,7 +158,7 @@ nav {
   height: 100vh;
   text-align: center; }
   .contact_me h1 {
-    width: 560px;
+    width: 100%;
     margin: 10px 0px 30px 0;
     font-size: 7.5em;
     color: #e28812;

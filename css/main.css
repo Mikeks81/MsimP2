@@ -7,7 +7,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  background: white;
+  background: #f7f7f7;
   opacity: 0;
   z-index: 999999;
   box-shadow: 0 0 1px #d6d6d6;

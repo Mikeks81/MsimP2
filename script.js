@@ -27,7 +27,7 @@
 $(document).ready(
 	function(){
 		
-		$('#greeting').delay(3000).slideUp(300);
+		// $('#greeting').delay(3000).slideUp(300);
 
 		$(window).scroll(function(){
 			// $('.greeting').css({'opacity': 1-(($(this).scrollTop())/200)

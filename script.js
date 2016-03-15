@@ -37,7 +37,7 @@ $(document).ready(
 
 			if ( $('header').css('opacity') < 1){
 				$('header').css({'opacity':0+(
-					($(this).scrollTop())/470)
+					($(this).scrollTop())/270)
 				});
 			}
 

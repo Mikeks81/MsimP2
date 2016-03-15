@@ -13,28 +13,32 @@ header {
   box-shadow: 0 0 1px #d6d6d6;
   top: 0; }
   header h1 {
-    width: 35%;
-    margin: 5px 380px 0 0;
+    width: 410px;
+    margin: 5px 0px 0 0;
     font-size: 2.5em;
     color: #919191;
     float: left;
     text-align: center; }
 
-nav ul {
-  margin: 10px;
-  list-style: none; }
-nav li {
-  display: inline-block; }
-nav a {
-  text-decoration: none;
-  padding: 10px 10px 10px 15px;
-  font-size: 1.7em;
-  color: #e28812; }
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #fff;
-  transition: 0.1s ease-in;
-  background-color: rgba(226, 136, 18, 0.9); }
+nav {
+  width: 60%;
+  float: right;
+  text-align: right; }
+  nav ul {
+    margin: 10px;
+    list-style: none; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    text-decoration: none;
+    padding: 10px 10px 10px 15px;
+    font-size: 1.7em;
+    color: #e28812; }
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+    transition: 0.1s ease-in;
+    background-color: rgba(226, 136, 18, 0.9); }
 
 .wrapper {
   width: 100%;
@@ -56,14 +60,23 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover; }
 
+#about {
+  margin-top: 30%; }
+
+#anchor_spacer {
+  width: 100%;
+  height: 10%; }
+
 .content {
-  width: 100%; }
+  width: 100%;
+  margin-top: 5%; }
   .content .content_container {
     width: 90%;
     margin: 0 auto;
     height: 90vh; }
     .content .content_container h1 {
       margin-bottom: 5%;
+      margin-top: 0;
       font-size: 8em;
       text-align: center;
       color: #e28812; }
@@ -83,7 +96,11 @@ nav a:hover {
     color: #919191;
     font-family: Arial; }
     .content .c2 h2, .content .c3 h2 {
-      margin-top: 0px; }
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .content .c2 p, .content .c3 p {
+      margin-top: 0px;
+      margin-bottom: 30px; }
 
 #code_info {
   display: flex;
@@ -138,30 +155,25 @@ nav a:hover {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
   .contact_me h1 {
-    color: #919191; }
+    width: 560px;
+    margin: 10px 0px 30px 0;
+    font-size: 7.5em;
+    color: #e28812;
+    float: left;
+    text-align: center; }
   .contact_me .contact_box {
-    width: 30%;
-    padding: 15%;
-    margin: auto; }
-  .contact_me input {
-    width: 100%;
-    height: 30px;
-    margin: 5px 0 5px 0;
-    border: 2px solid #e28812;
-    border-radius: 3px; }
-  .contact_me textarea {
-    width: 99.5%;
-    height: 150px;
-    margin: 5px 0 5px 0;
-    border-radius: 3px;
-    border: 2px solid #e28812; }
-  .contact_me button {
-    width: 102%;
-    border-radius: 3px;
-    background-color: white;
-    border: 2px solid #e28812;
-    height: 30px; }
+    width: 45%;
+    padding: 5% 15% 5% 15%;
+    margin: auto;
+    color: #888;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #f7f7f7; }
+    .contact_me .contact_box p {
+      font-size: 2em; }
+    .contact_me .contact_box span {
+      color: #e28812; }
 
 /*# sourceMappingURL=main.css.map */

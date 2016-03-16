@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 98%;
+  width: 100%;
   background: transparent;
   font-family: 'Fjalla One', sans-serif; }
 
@@ -179,6 +179,9 @@ nav {
   .content_gallery .img_one_container img, .content_gallery .img_two_container img, .content_gallery .img_three_container img, .content_gallery .img_four_container img {
     width: 100%;
     float: none; } }
+@media all and (max-width: 630px) {
+  .content_gallery .grey_background h1 {
+    font-size: 7em; } }
 .contact_me {
   margin: 0;
   padding: 0;
@@ -212,15 +215,23 @@ nav {
     width: 93%;
     display: inline-block; } }
 @media all and (max-width: 740px) {
-  header h1 {
-    width: 300px;
-    font-size: 2em; } }
+  header {
+    position: fixed; }
+    header h1 {
+      width: 300px;
+      font-size: 2em; } }
 @media all and (max-width: 630px) {
   header h1 {
     width: 90%; }
   header li {
     display: none; }
   header #burger {
-    display: block; } }
+    display: block; }
+
+  .contact_me h1 {
+    font-size: 6em; }
+  .contact_me .contact_box {
+    padding: 5% 5% 5% 5%;
+    width: 74%; } }
 
 /*# sourceMappingURL=main.css.map */

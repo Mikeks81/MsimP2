@@ -21,7 +21,7 @@ $orange: #e28812;
 body{
 	margin: 0;
 	padding: 0;
-	width: 98%;
+	width: 100%;
 	background: transparent;
 	font-family: 'Fjalla One', sans-serif;
 
@@ -198,6 +198,7 @@ header {
 
 @media all and (max-width: 740px) {
 	header {
+		position: fixed;
 		h1 {
 			width: 300px;
 			font-size: 2em;
@@ -218,6 +219,17 @@ header {
 			display: block;
 		}
 	}
+	
+	.contact_me {
+		h1 {
+			font-size: 6em;
+		}
+		.contact_box{
+			padding: 5% 5% 5% 5%;
+	    	width: 74%;
+		}
+	}
+
 }
 
 

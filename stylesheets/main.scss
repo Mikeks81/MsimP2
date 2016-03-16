@@ -21,6 +21,7 @@ $orange: #e28812;
 body{
 	margin: 0;
 	padding: 0;
+	width: 98%;
 	background: transparent;
 	font-family: 'Fjalla One', sans-serif;
 
@@ -41,6 +42,14 @@ header {
     color: #919191;
     float: left;
     text-align: center;
+	}
+	#burger {
+		position: absolute;
+		right: 30px;
+		top: 10px;
+		font-size: 20px;
+		color: #888;
+		display: none;
 	}
 }
 
@@ -107,6 +116,7 @@ header {
 		p {
 			margin-top: 0px;
 			margin-bottom: 30px;
+			overflow: auto;
 		}
 	}
 }
@@ -179,7 +189,7 @@ header {
 
 		.c2, .c3 {
 			width: 93%;
-			float: none;
+			display: inline-block;
 		}
 	
 	}
@@ -191,6 +201,21 @@ header {
 		h1 {
 			width: 300px;
 			font-size: 2em;
+		}
+	}
+
+}
+
+@media all and (max-width: 630px) {
+	header {
+		h1 {
+			width: 90%;
+		}
+		li {
+			display: none;
+		}
+		#burger{
+			display: block;
 		}
 	}
 }

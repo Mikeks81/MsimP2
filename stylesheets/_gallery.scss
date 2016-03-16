@@ -66,3 +66,23 @@
 	}
 
 }
+
+
+// @@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@
+
+@media all and (max-width: 990px){
+
+	.content_gallery {
+		.img_one_container .img_info_one{
+			min-width: 100%;
+			float: none;
+		}
+		.img_one_container img{
+			width: 100%;
+			float: none;
+
+		}
+	}
+}
+
+

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 98%;
   background: transparent;
   font-family: 'Fjalla One', sans-serif; }
 
@@ -19,6 +20,13 @@ header {
     color: #919191;
     float: left;
     text-align: center; }
+  header #burger {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 20px;
+    color: #888;
+    display: none; }
 
 nav {
   width: 60%;
@@ -47,6 +55,13 @@ nav {
   nav {
     width: 100%;
     float: none; } }
+@media all and (max-width: 630px) {
+  nav ul {
+    padding: 0; }
+  nav li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc; } }
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -99,7 +114,8 @@ nav {
       margin-bottom: 0px; }
     .content .c2 p, .content .c3 p {
       margin-top: 0px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      overflow: auto; }
 
 #code_info {
   display: flex;
@@ -156,6 +172,13 @@ nav {
   .content_gallery .img_four_container {
     margin-bottom: 80px; }
 
+@media all and (max-width: 990px) {
+  .content_gallery .img_one_container .img_info_one, .content_gallery .img_two_container .img_info_one, .content_gallery .img_three_container .img_info_one, .content_gallery .img_four_container .img_info_one, .content_gallery .img_one_container .img_info_two, .content_gallery .img_two_container .img_info_two, .content_gallery .img_three_container .img_info_two, .content_gallery .img_four_container .img_info_two, .content_gallery .img_one_container .img_info_three, .content_gallery .img_two_container .img_info_three, .content_gallery .img_three_container .img_info_three, .content_gallery .img_four_container .img_info_three, .content_gallery .img_one_container .img_info_four, .content_gallery .img_two_container .img_info_four, .content_gallery .img_three_container .img_info_four, .content_gallery .img_four_container .img_info_four {
+    min-width: 100%;
+    float: none; }
+  .content_gallery .img_one_container img, .content_gallery .img_two_container img, .content_gallery .img_three_container img, .content_gallery .img_four_container img {
+    width: 100%;
+    float: none; } }
 .contact_me {
   margin: 0;
   padding: 0;
@@ -187,10 +210,17 @@ nav {
 
   .content_container .c2, .content_container .c3 {
     width: 93%;
-    float: none; } }
+    display: inline-block; } }
 @media all and (max-width: 740px) {
   header h1 {
     width: 300px;
     font-size: 2em; } }
+@media all and (max-width: 630px) {
+  header h1 {
+    width: 90%; }
+  header li {
+    display: none; }
+  header #burger {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

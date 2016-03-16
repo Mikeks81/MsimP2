@@ -48,20 +48,34 @@ nav {
     transition: 0.1s ease-in;
     background-color: rgba(226, 136, 18, 0.9); }
 
-@media all and (max-width: 1040px) {
+@media all and (min-width: 831px) and (max-width: 1040px) {
   nav {
-    width: 50%; } }
-@media all and (max-width: 830px) {
+    width: 50%; }
+    nav li {
+      display: inline-block !important; } }
+@media all and (min-width: 631px) and (max-width: 830px) {
   nav {
     width: 100%;
-    float: none; } }
+    float: none; }
+    nav li {
+      display: inline-block !important; } }
 @media all and (max-width: 630px) {
-  nav ul {
-    padding: 0; }
-  nav li {
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid #ccc; } }
+  header h1 {
+    width: 90%; }
+  header nav {
+    width: 100%; }
+    header nav ul {
+      padding: 0; }
+    header nav li {
+      display: none;
+      width: 100%;
+      padding: 2px 0 2px 0;
+      text-align: center;
+      border-bottom: 1px solid #ccc; }
+    header nav li:last-child {
+      border: none; }
+  header #burger {
+    display: block; } }
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -172,7 +186,7 @@ nav {
   .content_gallery .img_four_container {
     margin-bottom: 80px; }
 
-@media all and (max-width: 990px) {
+@media all and (min-width: 631px) and (max-width: 990px) {
   .content_gallery .img_one_container .img_info_one, .content_gallery .img_two_container .img_info_one, .content_gallery .img_three_container .img_info_one, .content_gallery .img_four_container .img_info_one, .content_gallery .img_one_container .img_info_two, .content_gallery .img_two_container .img_info_two, .content_gallery .img_three_container .img_info_two, .content_gallery .img_four_container .img_info_two, .content_gallery .img_one_container .img_info_three, .content_gallery .img_two_container .img_info_three, .content_gallery .img_three_container .img_info_three, .content_gallery .img_four_container .img_info_three, .content_gallery .img_one_container .img_info_four, .content_gallery .img_two_container .img_info_four, .content_gallery .img_three_container .img_info_four, .content_gallery .img_four_container .img_info_four {
     min-width: 100%;
     float: none; }
@@ -181,7 +195,13 @@ nav {
     float: none; } }
 @media all and (max-width: 630px) {
   .content_gallery .grey_background h1 {
-    font-size: 7em; } }
+    font-size: 7em; }
+  .content_gallery .img_one_container .img_info_one, .content_gallery .img_two_container .img_info_one, .content_gallery .img_three_container .img_info_one, .content_gallery .img_four_container .img_info_one, .content_gallery .img_one_container .img_info_two, .content_gallery .img_two_container .img_info_two, .content_gallery .img_three_container .img_info_two, .content_gallery .img_four_container .img_info_two, .content_gallery .img_one_container .img_info_three, .content_gallery .img_two_container .img_info_three, .content_gallery .img_three_container .img_info_three, .content_gallery .img_four_container .img_info_three, .content_gallery .img_one_container .img_info_four, .content_gallery .img_two_container .img_info_four, .content_gallery .img_three_container .img_info_four, .content_gallery .img_four_container .img_info_four {
+    min-width: 100%;
+    float: none; }
+  .content_gallery .img_one_container img, .content_gallery .img_two_container img, .content_gallery .img_three_container img, .content_gallery .img_four_container img {
+    width: 100%;
+    float: none; } }
 .contact_me {
   margin: 0;
   padding: 0;
@@ -207,26 +227,33 @@ nav {
     .contact_me .contact_box span {
       color: #e28812; }
 
-@media all and (max-width: 990px) {
+@media all and (min-width: 741px) and (max-width: 990px) {
   .headshot {
     display: none; }
 
   .content_container .c2, .content_container .c3 {
     width: 93%;
     display: inline-block; } }
-@media all and (max-width: 740px) {
+@media all and (min-width: 631px) and (max-width: 740px) {
   header {
     position: fixed; }
     header h1 {
       width: 300px;
-      font-size: 2em; } }
-@media all and (max-width: 630px) {
-  header h1 {
-    width: 90%; }
-  header li {
+      font-size: 2em; }
+
+  .headshot {
     display: none; }
-  header #burger {
-    display: block; }
+
+  .content_container .c2, .content_container .c3 {
+    width: 93%;
+    display: inline-block; } }
+@media all and (max-width: 630px) {
+  .headshot {
+    display: none; }
+
+  .content_container .c2, .content_container .c3 {
+    width: 93%;
+    display: inline-block; }
 
   .contact_me h1 {
     font-size: 6em; }

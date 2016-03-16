@@ -70,7 +70,7 @@
 
 // @@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@
 
-@media all and (max-width: 990px){
+@media all and (min-width: 631px) and (max-width: 990px){
 
 	.content_gallery {
 		.img_one_container .img_info_one{
@@ -89,6 +89,15 @@
 	.content_gallery {
 		.grey_background h1 {
 			font-size: 7em;
+		}
+		.img_one_container .img_info_one{
+			min-width: 100%;
+			float: none;
+		}
+		.img_one_container img{
+			width: 100%;
+			float: none;
+
 		}
 	}
 }

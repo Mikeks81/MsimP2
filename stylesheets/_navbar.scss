@@ -26,28 +26,48 @@ nav {
 
 // @@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@
 
-@media all and (max-width: 1040px){
+@media all and (min-width: 831px) and (max-width: 1040px){
 	nav {
 		width: 50%;
+		li {
+			display: inline-block !important;
+		}
 	}	
 }
 
-@media all and (max-width: 830px) {
+@media all and (min-width: 631px) and (max-width: 830px) {
 	nav {
 		width: 100%;
-		float: none;	
+		float: none;
+		li {
+			display: inline-block !important;
+		}	
 	}
 }
 
 @media all and (max-width: 630px) {
-	nav {
-		ul { 
-			padding: 0;
+	header {
+		h1 {
+			width: 90%;
 		}
-		li {
+		nav {
+			width: 100%;
+			ul {
+				padding: 0;
+			}
+			li {
+				display: none;
+				width: 100%;
+				padding: 2px 0 2px 0;
+				text-align: center;
+				border-bottom: 1px solid #ccc;
+			}
+			li:last-child {
+				border: none;
+			}
+		}
+		#burger{
 			display: block;
-			text-align: center;
-			border-bottom: 1px solid #ccc;
 		}
 	}
 }

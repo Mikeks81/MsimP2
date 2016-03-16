@@ -26,14 +26,13 @@
 
 $(document).ready(
 	function(){
-		
-		// $('#greeting').delay(3000).slideUp(300);
+	
+	$('#burger').on('click',
+		function(){
+			$('nav li').toggle();
+	});
 
 		$(window).scroll(function(){
-			// $('.greeting').css({'opacity': 1-(($(this).scrollTop())/200)
-			// });
-			// $('.wrapper').css({'opacity': 1-(($(this).scrollTop())/200)
-			// });
 
 			if ( $('header').css('opacity') < 1){
 				$('header').css({'opacity':0+(

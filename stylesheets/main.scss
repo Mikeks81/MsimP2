@@ -181,7 +181,7 @@ header {
 
 // @@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@
 
-@media all and (max-width: 990px) {
+@media all and (min-width: 741px) and (max-width: 990px) {
 	.headshot{
 		display: none;
 	}
@@ -196,7 +196,7 @@ header {
 
 }
 
-@media all and (max-width: 740px) {
+@media all and (min-width: 631px) and (max-width: 740px) {
 	header {
 		position: fixed;
 		h1 {
@@ -204,22 +204,34 @@ header {
 			font-size: 2em;
 		}
 	}
+	.headshot{
+		display: none;
+	}
+	.content_container {
+
+		.c2, .c3 {
+			width: 93%;
+			display: inline-block;
+		}
+	
+	}
 
 }
 
 @media all and (max-width: 630px) {
-	header {
-		h1 {
-			width: 90%;
-		}
-		li {
-			display: none;
-		}
-		#burger{
-			display: block;
-		}
+
+	.headshot{
+		display: none;
 	}
+	.content_container {
+
+		.c2, .c3 {
+			width: 93%;
+			display: inline-block;
+		}
 	
+	}
+
 	.contact_me {
 		h1 {
 			font-size: 6em;

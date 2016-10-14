@@ -65,6 +65,10 @@ nav {
 			li:last-child {
 				border: none;
 			}
+			a:hover {
+				color: $orange;
+				background-color: none;
+			}
 		}
 		#burger{
 			display: block;

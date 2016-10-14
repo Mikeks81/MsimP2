@@ -74,6 +74,9 @@ nav {
       border-bottom: 1px solid #ccc; }
     header nav li:last-child {
       border: none; }
+    header nav a:hover {
+      color: #e28812;
+      background-color: none; }
   header #burger {
     display: block; } }
 .wrapper {
